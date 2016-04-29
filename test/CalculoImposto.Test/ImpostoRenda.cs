@@ -10,11 +10,21 @@ namespace CalculoImposto.Test
 
         public decimal Calcula(decimal salario)
         {
-            var valorAReduzir = 0M;
-            if (salario >= 1499.16M && salario <= 2246.75M)
-                return this.CalculaImposto(salario, 0.075M, 112.43M);
+            decimal porcentoAliquota = 0M,
+                valorReduzirDoImposto = 0M;
 
-            return valorAReduzir;
+            if (salario >= 1499.16M && salario <= 2246.75M)
+            {
+                porcentoAliquota = 0.075M;  // 7,5%
+                valorReduzirDoImposto = 112.43M;
+            }
+            else if (salario >= 2246.76M && salario <= 2995.70M)
+            {
+                porcentoAliquota = 0.15M; // 15%
+                valorReduzirDoImposto = 280.94M;
+            }
+
+            return this.CalculaImposto(salario, porcentoAliquota, valorReduzirDoImposto); ;
         }
 
         private decimal CalculaImposto(decimal salario, decimal percentualAliquota, decimal parcelaReduzirImposto)
