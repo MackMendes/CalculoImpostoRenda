@@ -23,8 +23,14 @@ namespace CalculoImposto.Test
                 porcentoAliquota = 0.15M; // 15%
                 valorReduzirDoImposto = 280.94M;
             }
+            else if (salario >= 2995.71M && salario <= 3743.19M)
+            {
+                porcentoAliquota = 0.225M; // 22,5%
+                valorReduzirDoImposto = 505.62M;
+            }
 
-            return this.CalculaImposto(salario, porcentoAliquota, valorReduzirDoImposto); ;
+
+            return this.CalculaImposto(salario, porcentoAliquota, valorReduzirDoImposto);
         }
 
         private decimal CalculaImposto(decimal salario, decimal percentualAliquota, decimal parcelaReduzirImposto)
