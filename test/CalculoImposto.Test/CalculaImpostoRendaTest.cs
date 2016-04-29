@@ -9,7 +9,7 @@ namespace CalculoImposto.Test
         public void CalculaImportoFaixaSemTaxa()
         {
             // Organizar cenários
-            var impostoRenda = new ImpostoRenda();
+            var impostoRenda = new ImpostoRenda(); 
             var salario = 1499.15M; // Valor do Salário Limite
 
             // Ação (Excutar)
