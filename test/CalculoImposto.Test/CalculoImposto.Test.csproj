@@ -57,7 +57,7 @@
     <Compile Include="FaixaSalarialAliquota22Virgual5Porcento.cs" />
     <Compile Include="FaixaSalarialAliquota7Virgual5Porcento.cs" />
     <Compile Include="FaixaSalarialAliquota15Porcento.cs" />
-    <Compile Include="FaixaSalarialIRDomain.cs" />
+    <Compile Include="FaixaSalarialAliquotaIR.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Choose>

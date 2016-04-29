@@ -1,6 +1,6 @@
 ﻿namespace CalculoImposto.Test
 {
-    public abstract class PercentualAliquotaIR
+    public abstract class FaixaSalarialAliquotaIR
     {
         /// <summary>
         /// Alíquota

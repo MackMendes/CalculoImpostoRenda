@@ -5,7 +5,7 @@
     /// Alíquota %: 27,5
     /// Parcela a deduzir do imposto em R$: 505,62
     /// </summary>
-    public sealed class FaixaSalarialAliquota27Virgual5Porcento : PercentualAliquotaIR
+    public sealed class FaixaSalarialAliquota27Virgual5Porcento : FaixaSalarialAliquotaIR
     {
         public FaixaSalarialAliquota27Virgual5Porcento()
         {
@@ -19,7 +19,7 @@
 
         #region Padrão Chain of Responbility
 
-        public PercentualAliquotaIR ProximaFaixa { private get; set; }
+        public FaixaSalarialAliquotaIR ProximaFaixa { private get; set; }
 
         #endregion
 

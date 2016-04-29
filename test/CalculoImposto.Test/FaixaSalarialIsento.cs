@@ -5,7 +5,7 @@
     /// Alíquota %: -
     /// Parcela a deduzir do imposto em R$: -
     /// </summary>
-    public sealed class FaixaSalarialIsento : PercentualAliquotaIR
+    public sealed class FaixaSalarialIsento : FaixaSalarialAliquotaIR
     {
         public FaixaSalarialIsento()
         {
@@ -14,7 +14,7 @@
 
         #region Padrão Chain of Responbility
 
-        public PercentualAliquotaIR ProximaFaixa { private get; set; }
+        public FaixaSalarialAliquotaIR ProximaFaixa { private get; set; }
 
         #endregion
 

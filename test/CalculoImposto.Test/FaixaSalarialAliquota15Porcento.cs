@@ -7,7 +7,7 @@ namespace CalculoImposto.Test
     /// Alíquota %: 15,0
     /// Parcela a deduzir do imposto em R$: 280,94
     /// </summary>
-    public sealed class FaixaSalarialAliquota15Porcento : PercentualAliquotaIR
+    public sealed class FaixaSalarialAliquota15Porcento : FaixaSalarialAliquotaIR
     {
         public FaixaSalarialAliquota15Porcento()
         {
@@ -23,7 +23,7 @@ namespace CalculoImposto.Test
 
         #region Padrão Chain of Responbility
 
-        public PercentualAliquotaIR ProximaFaixa { private get; set; }
+        public FaixaSalarialAliquotaIR ProximaFaixa { private get; set; }
 
         #endregion
 
