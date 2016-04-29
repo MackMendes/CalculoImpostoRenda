@@ -52,6 +52,12 @@
   <ItemGroup>
     <Compile Include="CalculaImpostoRendaTest.cs" />
     <Compile Include="ImpostoRenda.cs" />
+    <Compile Include="FaixaSalarialIsento.cs" />
+    <Compile Include="FaixaSalarialAliquota27Virgual5Porcento.cs" />
+    <Compile Include="FaixaSalarialAliquota22Virgual5Porcento.cs" />
+    <Compile Include="FaixaSalarialAliquota7Virgual5Porcento.cs" />
+    <Compile Include="FaixaSalarialAliquota15Porcento.cs" />
+    <Compile Include="FaixaSalarialIRDomain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Choose>

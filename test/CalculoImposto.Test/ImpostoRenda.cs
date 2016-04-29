@@ -4,42 +4,21 @@ namespace CalculoImposto.Test
 {
     public class ImpostoRenda
     {
-        public ImpostoRenda()
-        {
-        }
-
         public decimal Calcula(decimal salario)
         {
-            decimal porcentoAliquota = 0M,
-                valorReduzirDoImposto = 0M;
+            var faixaIsento = new FaixaSalarialIsento();
+            var faixa7virgula5 = new FaixaSalarialAliquota7Virgual5Porcento();
+            var faixa15 = new FaixaSalarialAliquota15Porcento();
+            var faixa22virgula5 = new FaixaSalarialAliquota22Virgual5Porcento();
+            var faixa27virgula5 = new FaixaSalarialAliquota27Virgual5Porcento();
 
-            if (salario >= 1499.16M && salario <= 2246.75M)
-            {
-                porcentoAliquota = 0.075M;  // 7,5%
-                valorReduzirDoImposto = 112.43M;
-            }
-            else if (salario >= 2246.76M && salario <= 2995.70M)
-            {
-                porcentoAliquota = 0.15M; // 15%
-                valorReduzirDoImposto = 280.94M;
-            }
-            else if (salario >= 2995.71M && salario <= 3743.19M)
-            {
-                porcentoAliquota = 0.225M; // 22,5%
-                valorReduzirDoImposto = 505.62M;
-            }
-            else if (salario >= 3743.20M)
-            {
-                porcentoAliquota = 0.275M; // 27,5%
-                valorReduzirDoImposto = 692.78M;
-            }
+            faixaIsento.ProximaFaixa = faixa7virgula5;
+            faixa7virgula5.ProximaFaixa = faixa15;
+            faixa15.ProximaFaixa = faixa22virgula5;
+            faixa22virgula5.ProximaFaixa = faixa27virgula5;
 
-            return this.CalculaImposto(salario, porcentoAliquota, valorReduzirDoImposto);
+            return faixaIsento.Calcular(salario);
         }
 
-        private decimal CalculaImposto(decimal salario, decimal percentualAliquota, decimal parcelaReduzirImposto)
-        {
-            return decimal.Round(((salario * percentualAliquota) - parcelaReduzirImposto), 2);
-        }
     }
 }

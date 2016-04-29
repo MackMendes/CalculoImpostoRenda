@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoImposto.Test", "test\CalculoImposto.Test\CalculoImposto.Test.csproj", "{C3007DE0-7D21-4E9F-98EF-F9BF83229E89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoImposto.Domain", "src\CalculoImposto.Domain\CalculoImposto.Domain.csproj", "{B25D524D-DA1C-40AD-84F4-66E7E1B86E7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C3007DE0-7D21-4E9F-98EF-F9BF83229E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3007DE0-7D21-4E9F-98EF-F9BF83229E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3007DE0-7D21-4E9F-98EF-F9BF83229E89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25D524D-DA1C-40AD-84F4-66E7E1B86E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25D524D-DA1C-40AD-84F4-66E7E1B86E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25D524D-DA1C-40AD-84F4-66E7E1B86E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25D524D-DA1C-40AD-84F4-66E7E1B86E7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
