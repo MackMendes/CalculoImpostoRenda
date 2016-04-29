@@ -59,5 +59,23 @@ namespace CalculoImposto.Test
         }
 
 
+        [TestMethod]
+        public void CalculaImportoFaixa22Virgula5PorcentoAliquota()
+        {
+            // Organizar cenários
+            var impostoRenda = new ImpostoRenda();
+            var salario = 3743.19M; // Valor do Salário Limite
+
+            // Ação (Excutar)
+            decimal parcelaADeduzir = impostoRenda.Calcula(salario);
+
+            // Afirmar (Verificar resultado)
+            var porcentoAliquota = 0.225M; // 15%
+            var valorReduzirDoImposto = 505.62M;
+            var valorASerDeduzido = decimal.Round((salario * porcentoAliquota - valorReduzirDoImposto), 2);
+
+            Assert.AreEqual(valorASerDeduzido, parcelaADeduzir);
+        }
+
     }
 }
