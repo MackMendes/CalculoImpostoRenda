@@ -1,6 +1,6 @@
-﻿using System;
+﻿using CalculoImposto.Application.Services.CalcularImposto.FaixasAplicarIR;
 
-namespace CalculoImposto.Test
+namespace CalculoImposto.Application.Services.CalcularImposto
 {
     public class ImpostoRenda
     {

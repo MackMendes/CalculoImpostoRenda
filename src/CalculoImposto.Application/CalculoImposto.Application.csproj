@@ -41,10 +41,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CalcularImposto\FaixasAplicarIR\Base\FaixaSalarialAliquotaIR.cs" />
+    <Compile Include="Services\CalcularImposto\FaixasAplicarIR\FaixaSalarialAliquota15Porcento.cs" />
+    <Compile Include="Services\CalcularImposto\FaixasAplicarIR\FaixaSalarialAliquota22Virgual5Porcento.cs" />
+    <Compile Include="Services\CalcularImposto\FaixasAplicarIR\FaixaSalarialAliquota27Virgual5Porcento.cs" />
+    <Compile Include="Services\CalcularImposto\FaixasAplicarIR\FaixaSalarialAliquota7Virgual5Porcento.cs" />
+    <Compile Include="Services\CalcularImposto\FaixasAplicarIR\FaixaSalarialIsento.cs" />
+    <Compile Include="Services\CalcularImposto\ImpostoRendaServices.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\CalcularImposto\ImpostoRenda\FaixasAplicar\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

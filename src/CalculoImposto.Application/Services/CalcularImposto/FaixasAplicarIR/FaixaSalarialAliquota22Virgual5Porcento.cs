@@ -1,11 +1,11 @@
-﻿namespace CalculoImposto.Test
+﻿namespace CalculoImposto.Application.Services.CalcularImposto.FaixasAplicarIR
 {
     /// <summary>
     /// Base de cálculo mensal em R$: De 2.995,71 até 3.743,19
     /// Alíquota %: 22,5
     /// Parcela a deduzir do imposto em R$: 505,62
     /// </summary>
-    public sealed class FaixaSalarialAliquota22Virgual5Porcento : FaixaSalarialAliquotaIR
+    public sealed class FaixaSalarialAliquota22Virgual5Porcento : Base.FaixaSalarialAliquotaIR
     {
         public FaixaSalarialAliquota22Virgual5Porcento()
         {
@@ -21,7 +21,7 @@
 
         #region Padrão Chain of Responbility
 
-        public FaixaSalarialAliquotaIR ProximaFaixa { private get; set; }
+        public Base.FaixaSalarialAliquotaIR ProximaFaixa { private get; set; }
 
         #endregion
 

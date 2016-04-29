@@ -19,7 +19,7 @@ namespace CalculoImposto.Domain.Test.Entities
         }
 
         [TestMethod]
-        public void FaixaSalarialIRDomain_CalculaImportoFaixaSemTaxa()
+        public void Domain_CalculaImportoFaixaSemTaxa()
         {
             // Organizar cenários
             var salario = 1499.15M; // Valor do Salário Limite
@@ -33,7 +33,7 @@ namespace CalculoImposto.Domain.Test.Entities
         }
 
         [TestMethod]
-        public void CalculaImportoFaixa7virgula5PorcentoAliquota()
+        public void Domain_CalculaImportoFaixa7virgula5PorcentoAliquota()
         {
             // Base de cálculo mensal em R$: De 1.499,16 até 2.246,75
             // Alíquota %: 7,5
@@ -56,7 +56,7 @@ namespace CalculoImposto.Domain.Test.Entities
         }
 
         [TestMethod]
-        public void CalculaImportoFaixa15PorcentoAliquota()
+        public void Domain_CalculaImportoFaixa15PorcentoAliquota()
         {
             //Base de cálculo mensal em R$: De 2.246,76 até 2.995,70
             //Alíquota %: 15,0
@@ -79,7 +79,7 @@ namespace CalculoImposto.Domain.Test.Entities
         }
 
         [TestMethod]
-        public void CalculaImportoFaixa22Virgula5PorcentoAliquota()
+        public void Domain_CalculaImportoFaixa22Virgula5PorcentoAliquota()
         {
             // Base de cálculo mensal em R$: De 2.995,71 até 3.743,19
             // Alíquota %: 22,5
@@ -102,7 +102,7 @@ namespace CalculoImposto.Domain.Test.Entities
         }
 
         [TestMethod]
-        public void CalculaImportoFaixa27Virgula5PorcentoAliquota()
+        public void Domain_CalculaImportoFaixa27Virgula5PorcentoAliquota()
         {
             // Organizar cenários
             var salario = 3743.20M; // Valor do Limite Inferior do Salário

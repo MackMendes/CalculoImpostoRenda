@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoImposto.Test", "test\CalculoImposto.Test\CalculoImposto.Test.csproj", "{C3007DE0-7D21-4E9F-98EF-F9BF83229E89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoImposto.Application.Test", "test\CalculoImposto.Test\CalculoImposto.Application.Test.csproj", "{C3007DE0-7D21-4E9F-98EF-F9BF83229E89}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoImposto.Domain", "src\CalculoImposto.Domain\CalculoImposto.Domain.csproj", "{B25D524D-DA1C-40AD-84F4-66E7E1B86E7C}"
 EndProject
@@ -14,6 +14,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{ACD6F6AF-4018-4F91-A42A-E525372155BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoImposto.Application", "src\CalculoImposto.Application\CalculoImposto.Application.csproj", "{22C67110-4F5D-4C35-B87F-164BE0FDD5FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OProblemaDoCalculoIR", "OProblemaDoCalculoIR", "{CBA27A38-8669-4F2A-94D1-E0B3FEA53E85}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Charles\Desktop\Problema do Calculos do IR.JPG = C:\Users\Charles\Desktop\Problema do Calculos do IR.JPG
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +47,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{C3007DE0-7D21-4E9F-98EF-F9BF83229E89} = {ACD6F6AF-4018-4F91-A42A-E525372155BD}
 		{B25D524D-DA1C-40AD-84F4-66E7E1B86E7C} = {1AD19A31-83C4-4B0D-82A0-F100908A8D8B}
 		{FF92B1B9-246A-42DB-B001-28A6F0E290CD} = {1AD19A31-83C4-4B0D-82A0-F100908A8D8B}
 		{22C67110-4F5D-4C35-B87F-164BE0FDD5FB} = {ACD6F6AF-4018-4F91-A42A-E525372155BD}

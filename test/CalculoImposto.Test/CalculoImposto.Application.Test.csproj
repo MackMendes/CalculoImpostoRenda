@@ -6,8 +6,8 @@
     <ProjectGuid>{C3007DE0-7D21-4E9F-98EF-F9BF83229E89}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CalculoImposto.Test</RootNamespace>
-    <AssemblyName>CalculoImposto.Test</AssemblyName>
+    <RootNamespace>CalculoImposto.Application.Test</RootNamespace>
+    <AssemblyName>CalculoImposto.Application.Test</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -45,20 +45,21 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="CalculaImpostoRendaTest.cs" />
-    <Compile Include="ImpostoRenda.cs" />
-    <Compile Include="FaixaSalarialIsento.cs" />
-    <Compile Include="FaixaSalarialAliquota27Virgual5Porcento.cs" />
-    <Compile Include="FaixaSalarialAliquota22Virgual5Porcento.cs" />
-    <Compile Include="FaixaSalarialAliquota7Virgual5Porcento.cs" />
-    <Compile Include="FaixaSalarialAliquota15Porcento.cs" />
-    <Compile Include="FaixaSalarialAliquotaIR.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CalcularImposto\ImpostoRendaServicesTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\CalculoImposto.Application\CalculoImposto.Application.csproj">
+      <Project>{22c67110-4f5d-4c35-b87f-164be0fdd5fb}</Project>
+      <Name>CalculoImposto.Application</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

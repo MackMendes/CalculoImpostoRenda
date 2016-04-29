@@ -1,4 +1,4 @@
-﻿namespace CalculoImposto.Test
+﻿namespace CalculoImposto.Application.Services.CalcularImposto.FaixasAplicarIR.Base
 {
     public abstract class FaixaSalarialAliquotaIR
     {

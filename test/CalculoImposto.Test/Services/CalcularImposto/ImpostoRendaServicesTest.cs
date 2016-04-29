@@ -1,9 +1,10 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using CalculoImposto.Application.Services.CalcularImposto;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CalculoImposto.Test
+namespace CalculoImposto.Application.Test.Services.CalcularImposto
 {
     [TestClass]
-    public class CalculaImpostoRendaTest
+    public class ImpostoRendaServicesTest
     {
         private ImpostoRenda _impostoRenda;
 
@@ -14,7 +15,7 @@ namespace CalculoImposto.Test
         }
 
         [TestMethod]
-        public void CalculaImportoFaixaSemTaxa()
+        public void Application_CalculaImportoFaixaSemTaxa()
         {
             // Organizar cenários
             var salario = 1499.15M; // Valor do Salário Limite
@@ -28,7 +29,7 @@ namespace CalculoImposto.Test
         }
 
         [TestMethod]
-        public void CalculaImportoFaixa7virgula5PorcentoAliquota()
+        public void Application_CalculaImportoFaixa7virgula5PorcentoAliquota()
         {
             // Organizar cenários
             var salario = 2246.75M; // Valor do Salário Limite
@@ -47,7 +48,7 @@ namespace CalculoImposto.Test
 
 
         [TestMethod]
-        public void CalculaImportoFaixa15PorcentoAliquota()
+        public void Application_CalculaImportoFaixa15PorcentoAliquota()
         {
             // Organizar cenários
             var salario = 2995.70M; // Valor do Salário Limite
@@ -65,7 +66,7 @@ namespace CalculoImposto.Test
 
 
         [TestMethod]
-        public void CalculaImportoFaixa22Virgula5PorcentoAliquota()
+        public void Application_CalculaImportoFaixa22Virgula5PorcentoAliquota()
         {
             // Organizar cenários
             var salario = 3743.19M; // Valor do Salário Limite
@@ -82,7 +83,7 @@ namespace CalculoImposto.Test
         }
 
         [TestMethod]
-        public void CalculaImportoFaixa27Virgula5PorcentoAliquota()
+        public void Application_CalculaImportoFaixa27Virgula5PorcentoAliquota()
         {
             // Organizar cenários
             var salario = 3743.20M; // Valor do Limite Inferior do Salário
