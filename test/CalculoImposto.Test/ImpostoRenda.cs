@@ -28,7 +28,11 @@ namespace CalculoImposto.Test
                 porcentoAliquota = 0.225M; // 22,5%
                 valorReduzirDoImposto = 505.62M;
             }
-
+            else if (salario >= 3743.20M)
+            {
+                porcentoAliquota = 0.275M; // 27,5%
+                valorReduzirDoImposto = 692.78M;
+            }
 
             return this.CalculaImposto(salario, porcentoAliquota, valorReduzirDoImposto);
         }
