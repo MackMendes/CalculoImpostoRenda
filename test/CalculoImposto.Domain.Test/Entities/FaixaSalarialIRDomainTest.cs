@@ -24,7 +24,7 @@ namespace CalculoImposto.Domain.Test.Entities
             // Organizar cenários
             var salario = 1499.15M; // Valor do Salário Limite
 
-            // Ação (Excutar)
+            // Ação (Executar)
             decimal parcelaADeduzir = _impostoRenda.CalcularIR(salario);
 
             // Afirmar (Verificar resultado)
@@ -47,7 +47,7 @@ namespace CalculoImposto.Domain.Test.Entities
             _impostoRenda.MenorSalarioDaFaixa = 1499.16M;
             _impostoRenda.MaiorSalarioDaFaixa = 2246.75M;
 
-            // Ação (Excutar)
+            // Ação (Executar)
             decimal parcelaADeduzir = _impostoRenda.CalcularIR(salario);
 
             // Afirmar (Verificar resultado)
@@ -70,7 +70,7 @@ namespace CalculoImposto.Domain.Test.Entities
             _impostoRenda.MenorSalarioDaFaixa = 2246.76M;
             _impostoRenda.MaiorSalarioDaFaixa = 2995.70M;
 
-            // Ação (Excutar)
+            // Ação (Executar)
             decimal parcelaADeduzir = _impostoRenda.CalcularIR(salario);
 
             // Afirmar (Verificar resultado)
@@ -93,7 +93,7 @@ namespace CalculoImposto.Domain.Test.Entities
             _impostoRenda.MenorSalarioDaFaixa = 2995.71M;
             _impostoRenda.MaiorSalarioDaFaixa = 3743.19M;
 
-            // Ação (Excutar)
+            // Ação (Executar)
             decimal parcelaADeduzir = _impostoRenda.CalcularIR(salario);
 
             // Afirmar (Verificar resultado)
@@ -112,7 +112,7 @@ namespace CalculoImposto.Domain.Test.Entities
             _impostoRenda.MenorSalarioDaFaixa = 3743.19M;
             _impostoRenda.MaiorSalarioDaFaixa = decimal.MaxValue;
 
-            // Ação (Excutar)
+            // Ação (Executar)
             decimal parcelaADeduzir = _impostoRenda.CalcularIR(salario);
 
             // Afirmar (Verificar resultado)

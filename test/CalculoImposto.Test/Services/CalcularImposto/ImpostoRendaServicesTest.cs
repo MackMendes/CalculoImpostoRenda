@@ -20,7 +20,7 @@ namespace CalculoImposto.Application.Test.Services.CalcularImposto
             // Organizar cenários
             var salario = 1499.15M; // Valor do Salário Limite
 
-            // Ação (Excutar)
+            // Ação (Executar)
             decimal parcelaADeduzir = _impostoRenda.Calcula(salario);
 
             // Afirmar (Verificar resultado)
@@ -34,7 +34,7 @@ namespace CalculoImposto.Application.Test.Services.CalcularImposto
             // Organizar cenários
             var salario = 2246.75M; // Valor do Salário Limite
 
-            // Ação (Excutar)
+            // Ação (Executar)
             decimal parcelaADeduzir = _impostoRenda.Calcula(salario);
 
             // Afirmar (Verificar resultado)
@@ -53,7 +53,7 @@ namespace CalculoImposto.Application.Test.Services.CalcularImposto
             // Organizar cenários
             var salario = 2995.70M; // Valor do Salário Limite
 
-            // Ação (Excutar)
+            // Ação (Executar)
             decimal parcelaADeduzir = _impostoRenda.Calcula(salario);
 
             // Afirmar (Verificar resultado)
@@ -71,7 +71,7 @@ namespace CalculoImposto.Application.Test.Services.CalcularImposto
             // Organizar cenários
             var salario = 3743.19M; // Valor do Salário Limite
 
-            // Ação (Excutar)
+            // Ação (Executar)
             decimal parcelaADeduzir = _impostoRenda.Calcula(salario);
 
             // Afirmar (Verificar resultado)
@@ -88,7 +88,7 @@ namespace CalculoImposto.Application.Test.Services.CalcularImposto
             // Organizar cenários
             var salario = 3743.20M; // Valor do Limite Inferior do Salário
 
-            // Ação (Excutar)
+            // Ação (Executar)
             decimal parcelaADeduzir = _impostoRenda.Calcula(salario);
 
             // Afirmar (Verificar resultado)
@@ -108,7 +108,7 @@ namespace CalculoImposto.Application.Test.Services.CalcularImposto
         /// <returns>Resultado</returns>
         private decimal CalculoIRParaTestar(decimal salario, decimal porcentoAliquota, decimal valorReduzirDoImposto)
         {
-            return decimal.Round((salario * porcentoAliquota - valorReduzirDoImposto), 2); ;
+            return decimal.Round((salario * porcentoAliquota - valorReduzirDoImposto), 2);
         }
     }
 }

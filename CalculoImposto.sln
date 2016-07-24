@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoImposto.Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OProblemaDoCalculoIR", "OProblemaDoCalculoIR", "{CBA27A38-8669-4F2A-94D1-E0B3FEA53E85}"
 	ProjectSection(SolutionItems) = preProject
-		C:\Users\Charles\Desktop\Problema do Calculos do IR.JPG = C:\Users\Charles\Desktop\Problema do Calculos do IR.JPG
+		docs\Problema do Calculos do IR.JPG = docs\Problema do Calculos do IR.JPG
 	EndProjectSection
 EndProject
 Global
